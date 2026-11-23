@@ -74,7 +74,7 @@ h2{font-weight:400;font-size:clamp(1.8rem,3.6vw,2.4rem);text-align:center;color:
 .post h3{font-size:1.2rem;font-weight:600;color:var(--top);margin:.3rem 0 .7rem}
 .post p{font-size:.97rem}
 .post .sig{display:block;margin-top:.8rem;font-family:Caveat,cursive;font-size:1.35rem;color:var(--mute)}
-.photo{max-width:900px;margin:0 auto 3.5rem;border:1px solid var(--line);background:#fff;padding:.6rem}
+.photo{max-width:900px;margin:0 auto 3.5rem;border:1px solid var(--line);background:var(--surface);padding:.6rem}
 .photo figcaption{text-align:center;color:var(--mute);font-size:.9rem;padding:.6rem 0 .2rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1.2rem}
 .pc{background:var(--surface);border:1px solid var(--line);padding:0;font:inherit;color:inherit;text-align:center;cursor:pointer;transition:box-shadow .2s,transform .2s}
