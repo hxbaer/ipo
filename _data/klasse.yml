@@ -6,7 +6,7 @@ people:
   photo: ''
   profile: []
 - name: Cyril
-  photo: https://static.wixstatic.com/media/1ecc99_2bc8e707e3974f94977613019b781cef~mv2.jpg
+  photo: /images/portraits/cyril.jpg
   profile:
   - label: Hobbys
     value: Golf, Basketball, Game
@@ -25,7 +25,7 @@ people:
   photo: ''
   profile: []
 - name: Eva
-  photo: https://static.wixstatic.com/media/1ecc99_fe742ac619574ac5b55f19f79a0d45c3~mv2.jpg
+  photo: /images/portraits/eva.jpg
   profile:
   - label: Hobbys
     value: singä, sport, zeichnä, lesä, soundä, uusgang, mit kollegä was machä, shoppä, tanzä, im wintr boarde
@@ -54,7 +54,7 @@ people:
   photo: ''
   profile: []
 - name: Hans
-  photo: https://static.wixstatic.com/media/1ecc99_5a3ab45745024d6eb8edaf728ab8b59a~mv2.jpg
+  photo: /images/portraits/hans.jpg
   profile:
   - label: Hobbys
     value: Fussball, Klavier, Musik hören, Fotografieren, Natur, Kunst, Reisen, Freunde treffen, Computer etc.
@@ -73,7 +73,7 @@ people:
   photo: ''
   profile: []
 - name: Kevin
-  photo: https://static.wixstatic.com/media/1ecc99_fa6df77c1067485b9b891410dd98e20e~mv2.jpg
+  photo: /images/portraits/kevin.jpg
   profile:
   - label: Hobbys
     value: auf der Rössliwiese hängen, Shisha rauchen, mein Hund, Roller, Boarde, Musik hören
@@ -86,7 +86,7 @@ people:
   - label: Lieblingsferienziele
     value: Bulgarien, Prag, Loret de Mar, Berlin
 - name: Laura
-  photo: https://static.wixstatic.com/media/1ecc99_fc28355d70cd42ffb111869507f31627~mv2.jpg
+  photo: /images/portraits/laura.jpg
   profile:
   - label: Hobbys
     value: sport ,tschutä, zeichnä, kollege, shisha, min hund, läsä
@@ -99,7 +99,7 @@ people:
   - label: Lieblingsferienziele
     value: Seychelles, Afrika
 - name: Lukas
-  photo: https://static.wixstatic.com/media/1ecc99_d6c94ca2f7424756a219a65375efb814~mv2.jpg
+  photo: /images/portraits/lukas.jpg
   profile:
   - label: Hobbys
     value: Chrafttraining, Fussball, Kino, schlafen
@@ -115,7 +115,7 @@ people:
   photo: ''
   profile: []
 - name: Mark
-  photo: https://static.wixstatic.com/media/1ecc99_6cbd046b4113443a829521a1d74c317d~mv2.jpg
+  photo: /images/portraits/mark.jpg
   profile:
   - label: Hobbys
     value: schlafen, chillen, Fussball, Basketball und fernsehen
@@ -128,7 +128,7 @@ people:
   - label: Lieblingsferienziele
     value: Mallorca und Sweet Home
 - name: Michael
-  photo: https://static.wixstatic.com/media/1ecc99_229f4bbda5d2494c82a37364c40c424a~mv2.jpg
+  photo: /images/portraits/michi.jpg
   profile:
   - label: Hobbys
     value: Motocross fahren und mit Freunden chillen
@@ -144,7 +144,7 @@ people:
   photo: ''
   profile: []
 - name: Michelle
-  photo: https://static.wixstatic.com/media/1ecc99_a554d0c45204448982af83a1c06cf99c~mv2.jpg
+  photo: /images/portraits/michelle.jpg
   profile:
   - label: Hobbys
     value: snowboarde, mit kollege öbbis mache, singe, natürli schoppe, usgang, chille, rite
@@ -166,7 +166,7 @@ people:
   photo: ''
   profile: []
 - name: Tim
-  photo: https://static.wixstatic.com/media/1ecc99_23d7b849887b44deb9c865cdcaf4c01e~mv2.jpg
+  photo: /images/portraits/tim.jpg
   profile:
   - label: Hobbys
     value: Biken, Klettere, Schwimmen
