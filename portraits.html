@@ -1,0 +1,48 @@
+---
+layout: null
+title: "Klasse"
+nav: /portraits.html
+---
+{% assign d = site.data.klasse %}{% include head.html %}
+<header class="pagehead"><div class="wrap"><h1>Klasse</h1><p>{{ d.intro | escape }}</p></div></header>
+<main>
+<section id="klasse">
+  <div class="wrap">
+    <div class="grid">
+{%- for p in d.people %}
+{%- capture src %}{% if p.photo and p.photo != "" %}{% include img.html src=p.photo %}{% endif %}{% endcapture %}
+{%- capture ph %}<div class="ph">{% if src != "" %}<img src="{{ src }}" alt="{{ p.name | escape }}, 2006" loading="lazy">{% else %}<span class="ini">{{ p.name | slice: 0 }}</span>{% endif %}</div><span>{{ p.name | escape }}</span>{% endcapture %}
+{%- if p.profile and p.profile.size > 0 %}
+<button type="button" class="pc" data-i="{{ forloop.index0 }}">{{ ph }}</button>
+{%- else %}
+<div class="pc off">{{ ph }}</div>
+{%- endif %}
+{%- endfor %}
+    </div>
+  </div>
+</section>
+</main>
+
+{% include footer.html %}
+<dialog id="dlg"><div class="dhead"><h3 id="dn"></h3><button type="button" class="close" aria-label="Schliessen">&times;</button></div><div class="dlg"><div class="dp" id="dp"></div><dl id="dl"></dl></div></dialog>
+<script>
+const P=[
+{%- for p in d.people %}
+{%- capture src %}{% if p.photo and p.photo != "" %}{% include img.html src=p.photo %}{% endif %}{% endcapture %}
+{"name":{{ p.name | jsonify }},"img":{% if src != "" %}{{ src | jsonify }}{% else %}null{% endif %},"rows":[{% for r in p.profile %}[{{ r.label | jsonify }},{{ r.value | jsonify }}]{% unless forloop.last %},{% endunless %}{% endfor %}]}{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+];
+const d=document.getElementById('dlg');
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+document.querySelectorAll('button.pc').forEach(b=>b.addEventListener('click',()=>{
+  const p=P[b.dataset.i]; if(!p) return;
+  document.getElementById('dn').textContent=p.name;
+  document.getElementById('dp').innerHTML=p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'">':'<span style="font-size:4rem;font-weight:300;color:#9aa8b8">'+esc(p.name[0])+'</span>';
+  document.getElementById('dl').innerHTML=p.rows.map(r=>'<dt>'+esc(r[0])+'</dt><dd>'+esc(r[1])+'</dd>').join('');
+  d.showModal();
+}));
+d.querySelector('.close').addEventListener('click',()=>d.close());
+d.addEventListener('click',e=>{if(e.target===d)d.close()});
+</script>
+</body>
+</html>

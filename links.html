@@ -1,0 +1,25 @@
+---
+layout: null
+title: "Links"
+nav: /links.html
+---
+{% assign d = site.data.links %}{% include head.html %}
+<header class="pagehead"><div class="wrap"><h1>Links</h1><p>{{ d.intro | escape }}</p></div></header>
+<main>
+<section id="links">
+  <div class="wrap">
+    <div class="cards">
+{%- for g in d.groups %}
+      <div class="card"><div class="k">{{ g.title | escape }}</div><ul class="links">
+{%- for l in g.links %}
+        <li><a href="{{ l.url | escape }}" target="_blank" rel="noopener">{{ l.label | escape }}</a></li>
+{%- endfor %}</ul></div>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+</main>
+
+{% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+---
+layout: null
+
+nav: /
+---
+{% assign d = site.data.home %}{% include head.html %}
+<main>
+<header class="hero">
+  <div class="wrap">
+    <h1>{{ d.heading | escape }}<span>{{ d.years | escape }}</span></h1>
+    <p>{{ d.text | escape }}</p>
+    {%- capture src %}{% include img.html src=d.photo %}{% endcapture %}
+    <figure class="hero-photo"><a href="{{ src }}" target="_blank" rel="noopener"><img id="kf" src="{{ src }}" alt="{{ d.photo_alt | escape }}" width="1749" height="1175"></a></figure>
+  </div>
+</header>
+</main>
+
+{% include footer.html %}
+</body>
+</html>

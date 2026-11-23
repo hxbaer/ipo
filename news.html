@@ -1,0 +1,23 @@
+---
+layout: null
+title: "News"
+nav: /news.html
+---
+{% assign d = site.data.news %}{% include head.html %}
+<header class="pagehead"><div class="wrap"><h1>News</h1><p>{{ d.intro | escape }}</p></div></header>
+<main>
+<section id="news">
+  <div class="wrap">
+    <div class="news news-all">
+{%- for p in d.posts %}
+      <article class="post{% if forloop.first %} first{% endif %}"><time>{{ p.date | escape }}</time><h3>{{ p.title | escape }}</h3>
+        <p>{{ p.text }}</p>{% if p.signature and p.signature != "" %}<span class="sig">{{ p.signature | escape }}</span>{% endif %}</article>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+</main>
+
+{% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+---
+layout: null
+title: "Termine & Stundenplan"
+nav: /termine.html
+---
+{% assign d = site.data.termine %}{% include head.html %}
+<header class="pagehead"><div class="wrap"><h1>{{ d.heading | escape }}</h1><p>{{ d.intro | escape }}</p></div></header>
+<main>
+<section id="termine">
+  <div class="wrap">
+    <div class="cards">
+{%- for t in d.items %}
+      <div class="card"><div class="k">{{ t.kicker | escape }}</div><h3>{{ t.title | escape }}</h3><p>{{ t.text | escape }}</p>{% if t.link and t.link != "" %}<a class="btn y" href="{% include img.html src=t.link %}" download>{{ t.button | default: "Herunterladen" | escape }}</a>{% endif %}</div>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+</main>
+
+{% include footer.html %}
+</body>
+</html>

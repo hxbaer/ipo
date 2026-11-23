@@ -1,0 +1,10 @@
+# Jekyll-Konfiguration. GitHub Pages baut die Seite damit automatisch,
+# die Inhalte kommen aus _data/ und werden in Pages CMS bearbeitet.
+title: Klassenwebsite 4G
+# Die Seite liegt unter https://hxbaer.github.io/ipo/ – bei eigener Domain baseurl auf "" setzen.
+baseurl: /ipo
+url: https://hxbaer.github.io
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,15 @@
+# Linkseite (nicht im Menü, erreichbar unter /links.html). Bearbeitung über Pages CMS (app.pagescms.org).
+intro: Also visit these sites. Die Links von 2006, einige führen heute vermutlich ins Leere.
+groups:
+- title: Music
+  links:
+  - label: Paving Stone
+    url: http://www.pavingstone.ch.vu
+  - label: Pams' State
+    url: http://www.pams-state.ch
+  - label: Seize the Day
+    url: http://www.myspace.com/seizethedaysound
+- title: Shops, clubs, etc.
+  links:
+  - label: abart
+    url: http://www.abart.ch

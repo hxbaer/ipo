@@ -1,0 +1,28 @@
+---
+layout: null
+title: "Damals"
+nav: /2006.html
+---
+{% assign d = site.data.damals %}{% include head.html %}
+{%- capture src %}{% include img.html src=d.screenshot %}{% endcapture %}
+<header class="pagehead"><div class="wrap"><h1>{{ d.heading | escape }}</h1><p>{{ d.intro | escape }}</p></div></header>
+<main>
+<section id="damals">
+  <div class="wrap">
+    <p class="shotcap">{{ d.caption | escape }}</p>
+    <figure class="then shot"><button type="button" id="lbopen" aria-label="Screenshot in Grossansicht öffnen"><img src="{{ src }}" alt="{{ d.alt | escape }}" width="1000" height="1668" loading="lazy"></button></figure>
+  </div>
+</section>
+</main>
+
+{% include footer.html %}
+
+<dialog id="lb"><button type="button" class="close" aria-label="Schliessen">&times;</button><img src="{{ src }}" alt="{{ d.alt | escape }} (Grossansicht)"></dialog>
+<script>
+const lb=document.getElementById("lb");
+document.getElementById("lbopen").addEventListener("click",()=>lb.showModal());
+lb.querySelector(".close").addEventListener("click",()=>lb.close());
+lb.addEventListener("click",e=>{if(e.target===lb)lb.close()});
+</script>
+</body>
+</html>

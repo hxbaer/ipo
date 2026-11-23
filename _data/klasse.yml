@@ -1,0 +1,186 @@
+# Klassenliste. Nur Vornamen und Steckbrief ohne persönliche Daten (keine Nachnamen, Geburtsdaten, Wohnorte).
+# Ohne Steckbrief-Einträge ist die Karte nicht anklickbar. Bearbeitung über Pages CMS (app.pagescms.org).
+intro: Klicke auf ein Portrait, um mehr über diese Person zu erfahren.
+people:
+- name: Annabelle
+  photo: ''
+  profile: []
+- name: Cyril
+  photo: https://static.wixstatic.com/media/1ecc99_2bc8e707e3974f94977613019b781cef~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: Golf, Basketball, Game
+  - label: Lieblingsgetränk
+    value: IRN-BRU
+  - label: Lieblingsessen
+    value: Hamburger
+  - label: Lieblingsmusik
+    value: Hip Hop
+  - label: Lieblingsferienziele
+    value: Amerika, Süd Afrika, Seychellen
+- name: Cyrill
+  photo: ''
+  profile: []
+- name: Dominic
+  photo: ''
+  profile: []
+- name: Eva
+  photo: https://static.wixstatic.com/media/1ecc99_fe742ac619574ac5b55f19f79a0d45c3~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: singä, sport, zeichnä, lesä, soundä, uusgang, mit kollegä was machä, shoppä, tanzä, im wintr boarde
+  - label: Lieblingsgetränk
+    value: hmm iis tee und normale tee
+  - label: Lieblingsessen
+    value: waiss nööd... hauptsach fein und vegetarisch :)
+  - label: Lieblingsmusik
+    value: Rock, Alternative, Metal, Jazz, dütschtä, schwiizär und french HipHop, Reggae, Goa - hauptsach gschiidi musig
+  - label: Lieblingsferienziele
+    value: Holland, Iitalie, Frankriich, Ängland, Boston, Norwegä
+- name: Fabian
+  photo: ''
+  profile:
+  - label: Hobbys
+    value: Fussball, Schwimmen, an See go hänge, Snöbe und am PC si
+  - label: Lieblingsgetränk
+    value: Ovomaltine
+  - label: Lieblingsessen
+    value: Älplermagaronen
+  - label: Lieblingsmusik
+    value: Punk & Rock
+  - label: Lieblingsferienziele
+    value: Genua, Madrid, Miami, Monaco, New York
+- name: Felicia Fiona
+  photo: ''
+  profile: []
+- name: Hans
+  photo: https://static.wixstatic.com/media/1ecc99_5a3ab45745024d6eb8edaf728ab8b59a~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: Fussball, Klavier, Musik hören, Fotografieren, Natur, Kunst, Reisen, Freunde treffen, Computer etc.
+  - label: Lieblingsgetränk
+    value: Ice Tea
+  - label: Lieblingsessen
+    value: Indonesisch, Italienisch, Chinesisch
+  - label: Lieblingsmusik
+    value: Rock, Hard Rock, Punk, Hip Hop, Metal, Blues, Jazz, Soul
+  - label: Lieblingsferienziele
+    value: Bali, Jakarta, Singapur
+- name: Ivan
+  photo: ''
+  profile: []
+- name: Joy
+  photo: ''
+  profile: []
+- name: Kevin
+  photo: https://static.wixstatic.com/media/1ecc99_fa6df77c1067485b9b891410dd98e20e~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: auf der Rössliwiese hängen, Shisha rauchen, mein Hund, Roller, Boarde, Musik hören
+  - label: Lieblingsgetränk
+    value: Rivella
+  - label: Lieblingsessen
+    value: Tomaten Mozerella
+  - label: Lieblingsmusik
+    value: Punk, Metal, Rock und eifach alles ussert Hip Hop
+  - label: Lieblingsferienziele
+    value: Bulgarien, Prag, Loret de Mar, Berlin
+- name: Laura
+  photo: https://static.wixstatic.com/media/1ecc99_fc28355d70cd42ffb111869507f31627~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: sport ,tschutä, zeichnä, kollege, shisha, min hund, läsä
+  - label: Lieblingsgetränk
+    value: kei ahnig
+  - label: Lieblingsessen
+    value: zürigschnätzlätz
+  - label: Lieblingsmusik
+    value: ich lose alläs ä chli
+  - label: Lieblingsferienziele
+    value: Seychelles, Afrika
+- name: Lukas
+  photo: https://static.wixstatic.com/media/1ecc99_d6c94ca2f7424756a219a65375efb814~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: Chrafttraining, Fussball, Kino, schlafen
+  - label: Lieblingsgetränk
+    value: Cola
+  - label: Lieblingsessen
+    value: Seafruits, Chinesisch, Italienisch
+  - label: Lieblingsmusik
+    value: Alles, aber am meischte House und Electro
+  - label: Lieblingsferienziele
+    value: England, Lanzarote, USA
+- name: Marc
+  photo: ''
+  profile: []
+- name: Mark
+  photo: https://static.wixstatic.com/media/1ecc99_6cbd046b4113443a829521a1d74c317d~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: schlafen, chillen, Fussball, Basketball und fernsehen
+  - label: Lieblingsgetränk
+    value: Bissl von allem ausser Wasser
+  - label: Lieblingsessen
+    value: McDonald's
+  - label: Lieblingsmusik
+    value: Bissl alles
+  - label: Lieblingsferienziele
+    value: Mallorca und Sweet Home
+- name: Michael
+  photo: https://static.wixstatic.com/media/1ecc99_229f4bbda5d2494c82a37364c40c424a~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: Motocross fahren und mit Freunden chillen
+  - label: Lieblingsgetränk
+    value: Red Bull
+  - label: Lieblingsessen
+    value: Pizza
+  - label: Lieblingsmusik
+    value: Hip-Hop/House
+  - label: Lieblingsferienziele
+    value: Italien
+- name: Michael
+  photo: ''
+  profile: []
+- name: Michelle
+  photo: https://static.wixstatic.com/media/1ecc99_a554d0c45204448982af83a1c06cf99c~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: snowboarde, mit kollege öbbis mache, singe, natürli schoppe, usgang, chille, rite
+  - label: Lieblingsgetränk
+    value: Tequilla, Cola
+  - label: Lieblingsessen
+    value: Pizza
+  - label: Lieblingsmusik
+    value: Rock, mängisch House & Hip-Hop
+  - label: Lieblingsferienziele
+    value: Miami, Malediven
+- name: Pascal
+  photo: ''
+  profile: []
+- name: Philipp
+  photo: ''
+  profile: []
+- name: Romeo
+  photo: ''
+  profile: []
+- name: Tim
+  photo: https://static.wixstatic.com/media/1ecc99_23d7b849887b44deb9c865cdcaf4c01e~mv2.jpg
+  profile:
+  - label: Hobbys
+    value: Biken, Klettere, Schwimmen
+  - label: Lieblingsgetränk
+    value: Rivella
+  - label: Lieblingsessen
+    value: Chnöpfli
+  - label: Lieblingsmusik
+    value: Kei ahnig
+  - label: Lieblingsferienziele
+    value: China, USA, Dubai
+- name: Tim
+  photo: ''
+  profile: []
+- name: Zita
+  photo: ''
+  profile: []

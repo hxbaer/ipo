@@ -1,0 +1,121 @@
+# Pages CMS – https://app.pagescms.org (Login mit GitHub, Repo hxbaer/ipo wählen)
+media:
+  input: images
+  output: /images
+  extensions: [jpg, jpeg, png, webp, gif, pdf, xls, xlsx]
+content:
+  - name: site
+    label: Allgemein (Titel, Menü, Footer)
+    type: file
+    path: _data/site.yml
+    fields:
+      - { name: title, label: Titel oben, type: string }
+      - { name: subtitle, label: Unterzeile oben, type: string }
+      - { name: home_title, label: "Seitentitel der Startseite (Browser-Tab)", type: string }
+      - { name: description, label: Kurzbeschreibung, type: text }
+      - { name: footer, label: Footer, type: string }
+      - name: nav
+        label: Menü
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Text, type: string }
+          - name: page
+            label: Seite
+            type: select
+            options:
+              values: [/, /news.html, /portraits.html, /termine.html, /2006.html, /links.html]
+  - name: home
+    label: Startseite
+    type: file
+    path: _data/home.yml
+    fields:
+      - { name: heading, label: Überschrift, type: string }
+      - { name: years, label: Jahre, type: string }
+      - { name: text, label: Text, type: text }
+      - { name: photo, label: Klassenfoto, type: image, description: "Querformat, ca. 1750 × 1175 px" }
+      - { name: photo_alt, label: Bildbeschreibung (Alt-Text), type: string }
+  - name: news
+    label: News
+    type: file
+    path: _data/news.yml
+    fields:
+      - { name: intro, label: Einleitung, type: string }
+      - name: posts
+        label: Einträge
+        type: object
+        list: true
+        description: Neueste oben. Der oberste Eintrag wird hervorgehoben.
+        fields:
+          - { name: date, label: Datum, type: string, description: "z.B. 06. April 2007" }
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Text, type: rich-text }
+          - { name: signature, label: Gruss (Handschrift), type: string }
+  - name: klasse
+    label: Klasse
+    type: file
+    path: _data/klasse.yml
+    fields:
+      - { name: intro, label: Einleitung, type: string }
+      - name: people
+        label: Personen
+        type: object
+        list: true
+        description: "Bitte nur Vornamen und keine persönlichen Daten wie Nachname, Geburtsdatum oder Wohnort – die Seite ist öffentlich."
+        fields:
+          - { name: name, label: Vorname, type: string }
+          - { name: photo, label: Portrait, type: image, description: "Hochformat 178 × 237 px (3:4). Ohne Foto wird der Anfangsbuchstabe gezeigt." }
+          - name: profile
+            label: Steckbrief
+            type: object
+            list: true
+            description: Ohne Einträge ist die Karte nicht anklickbar.
+            fields:
+              - { name: label, label: Frage, type: string, description: "z.B. Hobbys, Lieblingsessen" }
+              - { name: value, label: Antwort, type: string }
+  - name: termine
+    label: Termine
+    type: file
+    path: _data/termine.yml
+    fields:
+      - { name: heading, label: Überschrift, type: string }
+      - { name: intro, label: Einleitung, type: string }
+      - name: items
+        label: Karten
+        type: object
+        list: true
+        fields:
+          - { name: kicker, label: Zeile oben, type: string }
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Text, type: string }
+          - { name: button, label: Button-Text, type: string, description: Leer lassen für keinen Button. }
+          - { name: link, label: Datei oder Link für den Button, type: file }
+  - name: damals
+    label: Damals (2006)
+    type: file
+    path: _data/damals.yml
+    fields:
+      - { name: heading, label: Überschrift, type: string }
+      - { name: intro, label: Einleitung, type: string }
+      - { name: caption, label: Text über dem Bild, type: string }
+      - { name: screenshot, label: Screenshot, type: image, description: "Hochformat, ca. 1000 × 1668 px" }
+      - { name: alt, label: Bildbeschreibung (Alt-Text), type: string }
+  - name: links
+    label: Links
+    type: file
+    path: _data/links.yml
+    fields:
+      - { name: intro, label: Einleitung, type: string }
+      - name: groups
+        label: Gruppen
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Titel, type: string }
+          - name: links
+            label: Links
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Text, type: string }
+              - { name: url, label: Adresse, type: string }
