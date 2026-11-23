@@ -9,6 +9,8 @@ nav:
   page: /
 - label: News
   page: /news.html
+- label: Geschichte
+  page: /geschichte.html
 - label: Klasse
   page: /portraits.html
 - label: Termine
